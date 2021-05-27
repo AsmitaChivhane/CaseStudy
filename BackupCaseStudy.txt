@@ -1,6 +1,7 @@
 Day 1
 
 1. Setting up git repository for the project----------created git repository
+Git Repositosy Link : https://github.com/Achivhane/CaseStudy
     a. At the EoD push the code 
     b. Create a branch and merge it if it is working then push it
 2. set up your database with script
