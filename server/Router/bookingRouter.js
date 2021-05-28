@@ -13,7 +13,7 @@ router.get('/booking',function(req, res) {
     });
 });
 
-//post request for register data
+//post request for booking data
 router.post('/booking',(req, res)=>{
     var reg=new Booking();
     reg.train_name=req.body.train_name;
@@ -23,9 +23,9 @@ router.post('/booking',(req, res)=>{
     reg.booking_date=req.body.booking_date;
     reg.book=req.body.book;
     console.log("inside reg post");
-    // Output the book to the console for debugging
+    // Output to the console for testing
     console.log(reg);
-   // Passenger.push(register);
+   
    reg.save(function(err) {
     if (err)
     {

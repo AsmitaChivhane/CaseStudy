@@ -13,7 +13,7 @@ router.get('/TrainDetails',function(req, res) {
     });
 });
 
-//post request for register data
+//post request for train data
 router.post('/admin',(req, res)=>{
     var admin=new Admin();
     admin.train_name=req.body.train_name;
@@ -24,9 +24,9 @@ router.post('/admin',(req, res)=>{
     admin.departure_time=req.body.departure_time;
     admin.available=req.body.available;
     console.log("inside admin post");
-    // Output the book to the console for debugging
+    // Output to the console for testing
     console.log(admin);
-   // Passenger.push(register);
+   
    admin.save(function(err) {
     if (err)
     {

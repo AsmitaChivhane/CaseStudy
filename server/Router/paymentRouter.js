@@ -13,15 +13,15 @@ router.get('/PaymentDetails',function(req, res) {
     });
 });
 
-//post request for register data
+//post request for payment data
 router.post('/payment',(req, res)=>{
     var pay=new Payment();
     pay.fare=req.body.fare;
     pay.passenger_id=req.body.passenger_id;
     console.log("inside admin post");
-    // Output the book to the console for debugging
+    // Output to the console for testing
     console.log(pay);
-   // Passenger.push(register);
+   
    pay.save(function(err) {
     if (err)
     {
