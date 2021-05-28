@@ -186,7 +186,8 @@ const payment = require('./Router/paymentRouter')
 app.use(passenger);
 app.use(admin); 
 app.use(booking);
-app.use(payment);
+app.use(payment);  
+
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());

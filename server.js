@@ -24,6 +24,7 @@ app.use(function(req, res, next) {
     console.log('Something is happening.');
     next(); // make sure we go to the next routes and don't stop here
 });
+
 var port = process.env.PORT || 8080; 
 app.listen(port);
 console.log('Server Listening on port ' + port);
